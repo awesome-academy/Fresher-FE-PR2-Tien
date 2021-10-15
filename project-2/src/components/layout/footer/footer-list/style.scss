@@ -1,0 +1,27 @@
+@import "../../../../index.scss";
+
+.footer__list {
+  .ant-list-header {
+    border-bottom: none;
+    padding-bottom: 0.5rem;
+
+    .footer__list__header {
+      color: $dim-gray-color;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+
+  .ant-list-item {
+    border-bottom: none;
+    padding: 0;
+
+    .footer__list__img {
+      max-width: 150%;
+    }
+
+    .footer__list__description {
+      color: $gray-color;
+    }
+  }
+}
