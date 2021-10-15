@@ -1,4 +1,4 @@
-@import "../../../index.scss";
+@import "../../../../index.scss";
 
 .header__navbar--top {
   .ant-menu {
@@ -8,7 +8,7 @@
     justify-content: center;
     line-height: 30px;
 
-    &,.ant-menu-item,
+    .ant-menu-item,
     .ant-menu-item-active {
       color: $gray-color;
       border-bottom: none;

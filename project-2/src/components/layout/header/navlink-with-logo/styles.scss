@@ -1,0 +1,28 @@
+@import "../../../../index.scss";
+
+.header__navbar--bottom {
+  height: 7.5rem;
+
+  .navbar {
+    .logo{
+      padding-top: 2rem;
+    }
+
+    .nav__item {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 4.5rem;
+
+      .nav__link {
+        text-decoration: none;
+        color: $black-color;
+        font-weight: bold;
+      }
+    }
+
+    .logo__group{
+      padding-top: 1rem;
+      padding-left: 3rem;
+    }
+  }
+}
