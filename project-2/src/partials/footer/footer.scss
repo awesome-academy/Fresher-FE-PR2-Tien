@@ -8,15 +8,31 @@
   }
 
   .footer__logoCJ {
-   width: 7rem;
-   margin-top: 3rem;
+    width: 7rem;
+    margin-top: 3rem;
+
+    @include for-size(laptop) {
+      width: 12rem;
+    }
+
+    @include for-size(tablet) {
+      padding-top: 2rem;
+    }
+
+    @include for-size(mobile-sm) {
+      margin-left: 38%;
+    }
   }
 
   .logoCine {
     max-width: 100%;
   }
 
-  .footer__bottom{
+  .footer__bottom {
     height: 7rem;
+
+    @include for-size(laptop) {
+      height: 10rem;
+    }
   }
 }
