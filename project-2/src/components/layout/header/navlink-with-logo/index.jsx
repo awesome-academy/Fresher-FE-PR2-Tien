@@ -1,9 +1,9 @@
 import { Row, Col } from "antd";
 import "./styles.scss";
 
-const logoCGV = "/assets/logo/cgvlogo.png";
-const logoCine = "/assets/logo/kenhcine.gif";
-const logoTicket = "/assets/logo/mua-ve_ngay.png";
+const logoCGV = "/assets/logo/logo-header/cgvlogo.png";
+const logoCine = "/assets/logo/logo-header/kenhcine.gif";
+const logoTicket = "/assets/logo/logo-header/mua-ve_ngay.png";
 
 const navLink = [
   {
@@ -24,9 +24,9 @@ const navLink = [
   },
 ];
 
-const navLinkShow = navLink.map((item) => {
+const navLinkShow = navLink.map((item, index) => {
   return (
-    <li>
+    <li key={index}>
       <a className="nav__link" href={item.href}>
         {item.label}
       </a>
