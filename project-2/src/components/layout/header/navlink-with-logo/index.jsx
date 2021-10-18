@@ -1,4 +1,4 @@
-import { Row, Col } from "antd";
+import { Row, Col, Menu } from "antd";
 import "./styles.scss";
 
 const logoCGV = "/assets/logo/logo-header/cgvlogo.png";
@@ -34,22 +34,40 @@ const navLinkShow = navLink.map((item, index) => {
   );
 });
 
+const menuShow = navLink.map((item, index) => {
+  return (
+    <Menu.Item key={index} icon={item.icon}>
+      {item.label}
+    </Menu.Item>
+  );
+});
+
 function NavLinkWithLogo() {
   return (
     <div
       className="header__navbar--bottom"
-      style={{ background: `url("assets/img/bg-top.png") ` }}
+      style={{
+        background: `url("assets/img/background/bg-top.png") `,
+      }}
     >
       <Row className="navbar container">
-        <Col span={4} className="logo">
+        <Col xs={24} lg={4} className="logo">
           <img src={logoCGV} alt="logo" />
         </Col>
-        <Col span={12}>
+        <Col xs={0} lg={12}>
           <ul className="nav__item">{navLinkShow}</ul>
         </Col>
-        <Col span={8} className="logo__group">
+        <Col xs={0} lg={8} className="logo__group">
           <img src={logoCine} alt="gif" />
           <img src={logoTicket} alt="mua vé ngay" />
+        </Col>
+      </Row>
+
+      <br />
+
+      <Row>
+        <Col xs={24} lg={0}>
+          <Menu mode="horizontal">{menuShow}</Menu>
         </Col>
       </Row>
     </div>

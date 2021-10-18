@@ -72,29 +72,29 @@ function Footer() {
         <img className="logoCine" src={logoCine} alt="type of cine" />
       </div>
 
-      <hr className="footer__divider" style={{marginTop: "0px"}}/>
+      <hr className="footer__divider" style={{ marginTop: "0px" }} />
 
       <Row className="container">
-        <Col span={6}>
+        <Col xs={24} md={6}>
           <FooterList data={CGVList} />
         </Col>
-        <Col span={6}>
+        <Col xs={24} md={6}>
           <FooterList data={TermList} />
         </Col>
-        <Col span={6}>
+        <Col xs={24} md={6}>
           <FooterList data={ConnectList} />
         </Col>
-        <Col span={6}>
+        <Col xs={24} md={6}>
           <FooterList data={CustomerCareList} />
         </Col>
       </Row>
 
       <hr className="footer__divider" />
       <Row className="container">
-        <Col span={4}>
+        <Col xs={{ span: 24 }} md={4}>
           <img className="footer__logoCJ" src={logoCJ} alt="logo" />
         </Col>
-        <Col span={20}>
+        <Col xs={24} md={20}>
           <FooterList data={CJCGV} />
         </Col>
       </Row>
@@ -103,7 +103,7 @@ function Footer() {
 
       <div
         className="footer__bottom"
-        style={{ background: `url("assets/img/bg-bottom-footer.jpg") ` }}
+        style={{ background: `url("assets/img/background/bg-bottom-footer.jpg") ` }}
       ></div>
     </div>
   );

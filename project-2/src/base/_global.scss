@@ -4,6 +4,22 @@ html {
   scroll-behavior: smooth;
   overflow-y: scroll;
   font-family: $main-font;
+
+  @include for-size(4k) {
+    font-size: 16px;
+  }
+  @include for-size(laptop) {
+    font-size: 11px;
+  }
+  @include for-size(tablet) {
+    font-size: 8px;
+  }
+  @include for-size(mobile) {
+    font-size: 10px;
+  }
+  @include for-size(mobile-sm) {
+    font-size: 7px;
+  }
 }
 
 body {
@@ -18,4 +34,8 @@ body {
 .container {
   padding-left: 10%;
   padding-right: 10%;
+
+  @include for-size(laptop){
+    padding: 0 2%;
+  }
 }

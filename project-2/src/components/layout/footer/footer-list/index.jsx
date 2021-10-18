@@ -26,6 +26,7 @@ function FooterList({ data: { title, list, isIcon, isNavLink } }) {
             return (
               <List.Item>
                 <List.Item.Meta
+                  className="footer--center"
                   key={index}
                   description={
                     <img
