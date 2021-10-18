@@ -6,3 +6,14 @@ $background-color: #fdfcf0;
 $dim-gray-color: #636363;
 $gray-color: #666666;
 $black-color: #222222;
+
+// media queries
+$breakpoints: (
+  mobile-sm: 320px,
+  mobile-md: 375px,
+  mobile: 425px,
+  tablet: 768px,
+  laptop: 1024px,
+  laptop-lg: 1440px,
+  4k: 2560px,
+);
