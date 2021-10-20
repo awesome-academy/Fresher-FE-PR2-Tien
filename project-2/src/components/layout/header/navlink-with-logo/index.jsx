@@ -8,7 +8,7 @@ const logoTicket = "/assets/logo/logo-header/mua-ve_ngay.png";
 const navLink = [
   {
     label: "PHIM",
-    href: "#",
+    href: "/now-showing",
   },
   {
     label: "RẠP CGV",
@@ -52,7 +52,9 @@ function NavLinkWithLogo() {
     >
       <Row className="navbar container">
         <Col xs={24} lg={4} className="logo">
-          <img src={logoCGV} alt="logo" />
+          <a href="/">
+            <img src={logoCGV} alt="logo" />
+          </a>
         </Col>
         <Col xs={0} lg={12}>
           <ul className="nav__item">{navLinkShow}</ul>

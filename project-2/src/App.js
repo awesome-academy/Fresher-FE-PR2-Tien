@@ -1,11 +1,10 @@
 import React from "react";
-import Dashboard from "./pages/main/index.jsx";
-import News from "./pages/news/index.jsx";
+import { userRoutes } from "./router/router-config.jsx";
 import { Layout } from "antd";
 import Header from "./partials/header/header.jsx";
 import Footer from "./partials/footer/footer.jsx";
 import {
-  BrowserRouter  as Router,
+  BrowserRouter as Router,
   Route,
   Switch,
   Redirect,
@@ -19,13 +18,16 @@ function App() {
 
         <Router>
           <Switch>
-            <Route exact path="/">
-              <Dashboard />
-            </Route>
-
-            <Route path="/news">
-              <News />
-            </Route>
+            {Object.entries(userRoutes).map(([name, route]) => {
+              return (
+                <Route
+                  key={name}
+                  exact={route.exact}
+                  path={route.path}
+                  component={route.component}
+                />
+              );
+            })}
 
             <Redirect to="/" />
           </Switch>
