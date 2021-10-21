@@ -10,12 +10,12 @@ const eventTitle = "/assets/logo/logo-title/h3_event.gif";
 const movieSrc = {
   isMovie: true,
   list: [
-    "assets/img/movies/1200x1800_1.jpg",
-    "assets/img/movies/boss_level_-_payoff_poster_1__1.jpg",
-    "assets/img/movies/btdq_main_poster_1.jpg",
-    "assets/img/movies/godzilla_vs_1__1.jpg",
-    "assets/img/movies/mortal_kombat_-_vn_-_payoff_poster_1_1__1.jpg",
-    "assets/img/movies/poster_lat_mat_4_160421_1__1.jpg",
+    "assets/img/movies-showing/1200x1800_1.jpg",
+    "assets/img/movies-showing/boss_level_-_payoff_poster_1__1.jpg",
+    "assets/img/movies-showing/btdq_main_poster_1.jpg",
+    "assets/img/movies-showing/godzilla_vs_1__1.jpg",
+    "assets/img/movies-showing/mortal_kombat_-_vn_-_payoff_poster_1_1__1.jpg",
+    "assets/img/movies-showing/poster_lat_mat_4_160421_1__1.jpg",
   ],
 };
 

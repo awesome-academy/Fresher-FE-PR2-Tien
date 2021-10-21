@@ -12,29 +12,35 @@ const navlinkTop = [
     key: "hiring",
     label: "TUYỂN DỤNG",
     icon: <TeamOutlined />,
+    href: "#",
   },
   {
     key: "news",
     label: "TIN MỚI VÀ ƯU ĐÃI",
     icon: <TagOutlined />,
+    href: "/news",
   },
   {
     key: "ticket",
     label: "VÉ CỦA TÔI",
     icon: <IdcardOutlined />,
+    href: "#",
   },
   {
     key: "signin,signout",
     label: "ĐĂNG NHẬP / ĐĂNG KÝ",
     icon: <UserOutlined />,
+    href: "#",
   },
 ];
 
 const navLinkTopShow = navlinkTop.map((item) => {
   return (
-    <Menu.Item  key={item.key} icon={item.icon}>
-      {item.label}
-    </Menu.Item>
+    <a href={item.href}>
+      <Menu.Item key={item.key} icon={item.icon}>
+        {item.label}
+      </Menu.Item>
+    </a>
   );
 });
 
