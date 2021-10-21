@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.theater__info {
+  background-color: $background-color;
+  position: relative;
+
+  &__background {
+    margin-top: 5rem;
+    width: 65vw;
+    height: 45rem;
+  }
+}
