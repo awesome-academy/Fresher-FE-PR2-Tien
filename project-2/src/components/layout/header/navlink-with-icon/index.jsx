@@ -4,9 +4,10 @@ import {
   TagOutlined,
   IdcardOutlined,
 } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 import { Menu } from "antd";
 import { userLogOut } from "../../../../redux/actions/user.actions";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./styles.scss";
 
 const navlinkTop = [
@@ -14,54 +15,50 @@ const navlinkTop = [
     key: "hiring",
     label: "TUYỂN DỤNG",
     icon: <TeamOutlined />,
-    href: "#",
+    to: "#",
   },
   {
     key: "news",
     label: "TIN MỚI VÀ ƯU ĐÃI",
     icon: <TagOutlined />,
-    href: "/news",
-  },
-  {
-    key: "ticket",
-    label: "VÉ CỦA TÔI",
-    icon: <IdcardOutlined />,
-    href: "#",
-  },
-  {
-    key: "signin,signout",
-    label: "ĐĂNG NHẬP / ĐĂNG KÝ",
-    icon: <UserOutlined />,
-    href: "/login-logout",
+    to: "/news",
   },
 ];
+
+const ticketNavLink = {
+  key: "ticket",
+  label: "VÉ CỦA TÔI",
+  icon: <IdcardOutlined />,
+  to: "/ticket-cart",
+};
 
 const userNavLink = {
   key: "signin,signout",
   label: "ĐĂNG NHẬP / ĐĂNG KÝ",
   logOutLabel: " THOÁT",
   icon: <UserOutlined />,
-  href: "/login-logout",
+  to: "/login-logout",
 };
 
 const navLinkTopShow = navlinkTop.map((item) => {
   return (
-    <a href={item.href}>
+    <Link to={item.to}>
       <Menu.Item key={item.key} icon={item.icon}>
         {item.label}
       </Menu.Item>
-    </a>
+    </Link>
   );
 });
 
 function NavLinkWithIcon() {
   const dispatch = useDispatch();
-  const user = JSON.parse(sessionStorage.getItem("user"));
+  const user = useSelector((state) => state.user.user);
+  const auth = useSelector((state) => state.user.isLoggedIn);
 
   const userLinkShow = (user) => {
-    if (user) {
+    if (user.username) {
       return (
-        <a href={userNavLink.href} onClick={() => dispatch(userLogOut())}>
+        <a href={userNavLink.to} onClick={() => dispatch(userLogOut())}>
           <Menu.Item key={userNavLink.key} icon={userNavLink.icon}>
             <span>Xin Chào </span>
             <span className="username">{user.username}</span>
@@ -71,18 +68,33 @@ function NavLinkWithIcon() {
       );
     } else {
       return (
-        <a href={userNavLink.href}>
+        <Link to={userNavLink.to}>
           <Menu.Item key={userNavLink.key} icon={userNavLink.icon}>
             {userNavLink.label}
           </Menu.Item>
-        </a>
+        </Link>
       );
     }
   };
+
+  const ticketNavLinkShow = (auth) => {
+    if (auth) {
+      return (
+        <Link to={ticketNavLink.to}>
+          <Menu.Item key={ticketNavLink.key} icon={ticketNavLink.icon}>
+            {ticketNavLink.label}
+          </Menu.Item>
+        </Link>
+      );
+    }
+  };
+
   return (
     <div className="header__navbar--top">
       <Menu mode="horizontal">
         {navLinkTopShow}
+
+        {ticketNavLinkShow(auth)}
 
         {userLinkShow(user)}
       </Menu>

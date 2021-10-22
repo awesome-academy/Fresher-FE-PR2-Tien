@@ -1,5 +1,5 @@
-import { Card } from "antd";
-import { Button } from "antd";
+import { Card, Button } from "antd";
+import { Link } from "react-router-dom";
 import "./styles.scss";
 
 const { Meta } = Card;
@@ -29,7 +29,9 @@ function FilmCard({ movie: { id, src, name, type, time, start, status } }) {
             size="large"
             href={"/film-detail/" + id}
           >
-            CHI TIẾT
+            <Link style={{ color: "white" }} to={"/film-detail/" + id}>
+              CHI TIẾT
+            </Link>
           </Button>,
         ]}
       >

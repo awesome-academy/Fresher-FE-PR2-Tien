@@ -11,8 +11,10 @@ import {
 } from "react-router-dom";
 import { getMovieData } from "./redux/thunks/movie.thunk";
 import { getTheaterData } from "./redux/thunks/theater.thunk";
+import { getWishList } from "./redux/actions/wishList.actions";
 import { getNewsData } from "./redux/thunks/news.thunk";
 import { getMovieCalendarData } from "./redux/thunks/movieCalendar.thunk";
+import { getTicketData } from "./redux/thunks/ticket.thunk";
 import { useDispatch } from "react-redux";
 
 function App() {
@@ -24,15 +26,17 @@ function App() {
   React.useEffect(() => {
     dispatch(getMovieData());
     dispatch(getTheaterData());
+    dispatch(getWishList());
     dispatch(getNewsData());
     dispatch(getMovieCalendarData());
+    dispatch(getTicketData());
   }, [dispatch]);
 
   return (
     <div className="App">
       <Layout>
-        <Header />
         <Router>
+          <Header />
           <Switch>
             {Object.entries(userRoutes).map(([name, route]) => {
               return (
@@ -45,7 +49,7 @@ function App() {
               );
             })}
 
-            <Redirect to="/" />
+            <Redirect to="/error" />
           </Switch>
         </Router>
 

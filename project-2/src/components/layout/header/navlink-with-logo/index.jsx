@@ -1,4 +1,5 @@
 import { Row, Col, Menu } from "antd";
+import { Link } from "react-router-dom";
 import "./styles.scss";
 
 const logoCGV = "/assets/logo/logo-header/cgvlogo.png";
@@ -8,28 +9,28 @@ const logoTicket = "/assets/logo/logo-header/mua-ve_ngay.png";
 const navLink = [
   {
     label: "PHIM",
-    href: "/now-showing",
+    to: "/now-showing",
   },
   {
     label: "RẠP CGV",
-    href: "/theater-info",
+    to: "/theater-info",
   },
   {
     label: "THÀNH VIÊN",
-    href: "#",
+    to: "#",
   },
   {
     label: "CULTURE PLEX",
-    href: "#",
+    to: "#",
   },
 ];
 
 const navLinkShow = navLink.map((item, index) => {
   return (
     <li key={index}>
-      <a className="nav__link" href={item.href}>
+      <Link className="nav__link" to={item.to}>
         {item.label}
-      </a>
+      </Link>
     </li>
   );
 });
@@ -52,9 +53,9 @@ function NavLinkWithLogo() {
     >
       <Row className="navbar container">
         <Col xs={24} lg={4} className="logo">
-          <a href="/">
+          <Link to="/">
             <img src={logoCGV} alt="logo" />
-          </a>
+          </Link>
         </Col>
         <Col xs={0} lg={12}>
           <ul className="nav__item">{navLinkShow}</ul>

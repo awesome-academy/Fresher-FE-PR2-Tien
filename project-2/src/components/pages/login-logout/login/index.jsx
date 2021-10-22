@@ -31,7 +31,6 @@ function LogIn(props) {
     props.users.map((item) => {
       if (item.email === user.email && item.password === user.password) {
         dispatch(userAuthorize(item));
-        window.location.reload();
         history.push("/");
       } else {
         dispatch(userAuthorizeError());
