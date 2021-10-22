@@ -33,6 +33,13 @@ export function getAllIncomingMoviesError(error) {
   };
 }
 
+export function getMovieByIdError(error) {
+  return {
+    type: "GET_MOVIE_BY_ID_ERROR",
+    payload: error,
+  };
+}
+
 export function getAllShowingMovies(movies) {
   return {
     type: "GET_ALL_SHOWING_MOVIES",
@@ -43,6 +50,13 @@ export function getAllShowingMovies(movies) {
 export function getAllShowingMoviesError(error) {
   return {
     type: "GET_ALL_SHOWING_MOVIES_ERROR",
+    payload: error,
+  };
+}
+
+export function deleteMovieError(error) {
+  return {
+    type: "DELETE_MOVIE_ERROR",
     payload: error,
   };
 }
@@ -61,16 +75,21 @@ export function getAllMoviesByNameError(error) {
   };
 }
 
-export function getMovieByIdError(error) {
+export function deleteMovieSuccess() {
   return {
-    type: "GET_MOVIE_BY_ID_ERROR",
+    type: "DELETE_MOVIE_SUCCESS",
+  };
+}
+
+export function updateMovieError(error) {
+  return {
+    type: "UPDATE_MOVIE_ERROR",
     payload: error,
   };
 }
 
-export function setMovies(movies) {
+export function updateMovieSuccess() {
   return {
-    type: "SET_MOVIES",
-    payload: movies,
+    type: "UPDATE_MOVIE_SUCCESS",
   };
 }

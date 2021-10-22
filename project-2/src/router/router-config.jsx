@@ -10,6 +10,7 @@ import Error from "../pages/error/index";
 import PurchaseSuccess from "../pages/purchase-success/index";
 import ManageUser from "../admin/pages/manage-user/index";
 import ManageRevenue from "../admin/pages/manage-revenue/index";
+import ManageFilm from "../admin/pages/manage-film/index";
 
 const ROUTES__CONFIG = {
   USER__ROUTES: {
@@ -72,6 +73,11 @@ const ROUTES__CONFIG = {
       path: "/admin/manage-revenue",
       exact: true,
       component: ManageRevenue,
+    },
+    ManageFilm: {
+      path: "/admin/manage-film",
+      exact: true,
+      component: ManageFilm,
     },
   },
 };

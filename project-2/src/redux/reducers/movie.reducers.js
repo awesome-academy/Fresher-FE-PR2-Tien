@@ -4,6 +4,7 @@ const initialState = {
   showingMovies: [],
   movieById: "",
   error: null,
+  status: "",
 };
 
 export default function movieReducers(state = initialState, { type, payload }) {
@@ -12,7 +13,9 @@ export default function movieReducers(state = initialState, { type, payload }) {
       return {
         ...state,
         movies: payload,
+        status: "",
       };
+
     case "GET_ALL_MOVIES_ERROR":
       return {
         ...state,
@@ -72,6 +75,32 @@ export default function movieReducers(state = initialState, { type, payload }) {
       return {
         ...state,
         error: payload,
+      };
+
+    case "DELETE_MOVIE_ERROR":
+      return {
+        ...state,
+        error: payload,
+        status: "delete fail",
+      };
+
+    case "DELETE_MOVIE_SUCCESS":
+      return {
+        ...state,
+        status: "delete success",
+      };
+
+    case "UPDATE_MOVIE_ERROR":
+      return {
+        ...state,
+        error: payload,
+        status: "update fail",
+      };
+
+    case "UPDATE_MOVIE_SUCCESS":
+      return {
+        ...state,
+        status: "update success",
       };
 
     default:

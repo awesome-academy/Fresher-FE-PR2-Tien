@@ -40,16 +40,6 @@ const userNavLink = {
   to: "/login-logout",
 };
 
-const navLinkTopShow = navlinkTop.map((item) => {
-  return (
-    <Link to={item.to}>
-      <Menu.Item key={item.key} icon={item.icon}>
-        {item.label}
-      </Menu.Item>
-    </Link>
-  );
-});
-
 function NavLinkWithIcon() {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user.user);

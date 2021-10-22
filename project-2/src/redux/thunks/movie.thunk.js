@@ -41,6 +41,30 @@ export function getShowingMovieData() {
   };
 }
 
+export function getMovieDataById(id) {
+  return async (dispatch) => {
+    try {
+      const response = await axios.get(movieURL + "/" + id);
+      await dispatch(actions.getMovieById(response.data));
+    } catch (error) {
+      dispatch(actions.getMovieByIdError(error));
+    }
+  };
+}
+
+export function deleteMovie(id) {
+  return (dispatch) => {
+    axios
+      .delete(movieURL + "/" + id)
+      .then(() => {
+        dispatch(actions.deleteMovieSuccess());
+      })
+      .catch((error) => {
+        dispatch(actions.deleteMovieError(error));
+      });
+  };
+}
+
 export function getMoviesByName(name) {
   return (dispatch) => {
     axios
@@ -54,13 +78,15 @@ export function getMoviesByName(name) {
   };
 }
 
-export function getMovieDataById(id) {
-  return async (dispatch) => {
-    try {
-      const response = await axios.get(movieURL + "/" + id);
-      await dispatch(actions.getMovieById(response.data));
-    } catch (error) {
-      dispatch(actions.getMovieByIdError(error));
-    }
+export function updateMovie(movie) {
+  return (dispatch) => {
+    axios
+      .put(movieURL + "/" + movie.id, { ...movie })
+      .then(() => {
+        dispatch(actions.updateMovieSuccess());
+      })
+      .catch((error) => {
+        dispatch(actions.updateMovieError(error));
+      });
   };
 }
