@@ -51,13 +51,13 @@ export default function movieReducers(state = initialState, { type, payload }) {
         ...state,
         movieById: payload,
       };
-    
+
     case "GET_MOVIE_BY_ID_ERROR":
       return {
         ...state,
         movieById: payload,
       };
-    
+
     case "SET_MOVIES":
       return {
         ...state,
