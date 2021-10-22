@@ -1,6 +1,6 @@
 import React from "react";
 import { userRoutes } from "./router/router-config.jsx";
-import { Layout } from "antd";
+import { Layout, BackTop } from "antd";
 import Header from "./partials/header/header.jsx";
 import Footer from "./partials/footer/footer.jsx";
 import {
@@ -12,6 +12,7 @@ import {
 import { getMovieData } from "./redux/thunks/movie.thunk";
 import { getTheaterData } from "./redux/thunks/theater.thunk";
 import { getNewsData } from "./redux/thunks/news.thunk";
+import { getMovieCalendarData } from "./redux/thunks/movieCalendar.thunk";
 import { useDispatch } from "react-redux";
 
 function App() {
@@ -24,13 +25,13 @@ function App() {
     dispatch(getMovieData());
     dispatch(getTheaterData());
     dispatch(getNewsData());
+    dispatch(getMovieCalendarData());
   }, [dispatch]);
 
   return (
     <div className="App">
       <Layout>
         <Header />
-
         <Router>
           <Switch>
             {Object.entries(userRoutes).map(([name, route]) => {
@@ -47,6 +48,8 @@ function App() {
             <Redirect to="/" />
           </Switch>
         </Router>
+
+        <BackTop />
 
         <Footer />
       </Layout>
