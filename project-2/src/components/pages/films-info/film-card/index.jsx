@@ -8,7 +8,7 @@ const logoPrice = "/assets/logo/logo-price/ribon-49k.png";
 
 const ticket = "/assets/icons/bg-cate-booking.png";
 
-function FilmCard({ movie: { src, name, type, time, start, status } }) {
+function FilmCard({ movie: { id, src, name, type, time, start, status } }) {
   return (
     <div className="film-card">
       <Card
@@ -27,8 +27,9 @@ function FilmCard({ movie: { src, name, type, time, start, status } }) {
             shape="round"
             icon={<img src={ticket} alt="ticket" />}
             size="large"
+            href={"/film-detail/" + id}
           >
-            MUA VÉ
+            CHI TIẾT
           </Button>,
         ]}
       >

@@ -19,6 +19,13 @@ export function getAllIncomingMovies(movies) {
   };
 }
 
+export function getMovieById(movies) {
+  return {
+    type: "GET_MOVIE_BY_ID",
+    payload: movies,
+  };
+}
+
 export function getAllIncomingMoviesError(error) {
   return {
     type: "GET_ALL_INCOMING_MOVIES_ERROR",
@@ -50,6 +57,13 @@ export function getAllMoviesByName(movies) {
 export function getAllMoviesByNameError(error) {
   return {
     type: "GET_ALL_MOVIES_BY_NAME_ERROR",
+    payload: error,
+  };
+}
+
+export function getMovieByIdError(error) {
+  return {
+    type: "GET_MOVIE_BY_ID_ERROR",
     payload: error,
   };
 }

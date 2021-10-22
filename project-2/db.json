@@ -408,5 +408,27 @@
     { "name": "Tây Ninh" },
     { "name": "Thái Nguyên" },
     { "name": "Tiền Giang" }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "isAdmin": false,
+      "username": "tien",
+      "password": "123",
+      "name": "minh tien",
+      "phone": 12345566,
+      "email": "minh@minh.com",
+      "sex": "nam"
+    },
+    {
+      "id": 2,
+      "isAdmin": true,
+      "username": "tien1234",
+      "password": "123",
+      "name": "minh tien dao",
+      "phone": 12345566,
+      "email": "minh@minh.com",
+      "sex": "nam"
+    }
   ]
 }

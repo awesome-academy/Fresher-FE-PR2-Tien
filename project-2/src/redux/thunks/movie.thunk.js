@@ -53,3 +53,14 @@ export function getMoviesByName(name) {
       });
   };
 }
+
+export function getMovieDataById(id) {
+  return async (dispatch) => {
+    try {
+      const response = await axios.get(movieURL + "/" + id);
+      await dispatch(actions.getMovieById(response.data));
+    } catch (error) {
+      dispatch(actions.getMovieByIdError(error));
+    }
+  };
+}
