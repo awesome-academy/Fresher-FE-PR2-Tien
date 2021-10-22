@@ -381,54 +381,115 @@
       "name": "Đà Nẵng",
       "list": ["CGV Vĩnh Trung Plaza", "CGV Vincom Đà Nẵng"]
     },
-    { "name": "Cần Thơ" },
-    { "name": "Đồng Nai" },
-    { "name": "Hải Phòng" },
-    { "name": "Quảng Ninh" },
-    { "name": "Bà Rịa-Vũng Tàu" },
-    { "name": "Bình Định" },
-    { "name": "Bình Dương" },
-    { "name": "Đắk Lắk" },
-    { "name": "Trà Vinh" },
-    { "name": "Yên Bái" },
-    { "name": "Vĩnh Long" },
-    { "name": "Kiên Giang" },
-    { "name": "Hậu Giang" },
-    { "name": "Hà Tĩnh" },
-    { "name": "Phú Yên" },
-    { "name": "Đồng Tháp" },
-    { "name": "Hưng Yên" },
-    { "name": "Khánh Hòa" },
-    { "name": "Kon Tum" },
-    { "name": "Lạng Sơn" },
-    { "name": "Nghệ An" },
-    { "name": "Quảng Ngãi" },
-    { "name": "Sóc Trăng" },
-    { "name": "Sơn La" },
-    { "name": "Tây Ninh" },
-    { "name": "Thái Nguyên" },
-    { "name": "Tiền Giang" }
+    {
+      "name": "Cần Thơ"
+    },
+    {
+      "name": "Đồng Nai"
+    },
+    {
+      "name": "Hải Phòng"
+    },
+    {
+      "name": "Quảng Ninh"
+    },
+    {
+      "name": "Bà Rịa-Vũng Tàu"
+    },
+    {
+      "name": "Bình Định"
+    },
+    {
+      "name": "Bình Dương"
+    },
+    {
+      "name": "Đắk Lắk"
+    },
+    {
+      "name": "Trà Vinh"
+    },
+    {
+      "name": "Yên Bái"
+    },
+    {
+      "name": "Vĩnh Long"
+    },
+    {
+      "name": "Kiên Giang"
+    },
+    {
+      "name": "Hậu Giang"
+    },
+    {
+      "name": "Hà Tĩnh"
+    },
+    {
+      "name": "Phú Yên"
+    },
+    {
+      "name": "Đồng Tháp"
+    },
+    {
+      "name": "Hưng Yên"
+    },
+    {
+      "name": "Khánh Hòa"
+    },
+    {
+      "name": "Kon Tum"
+    },
+    {
+      "name": "Lạng Sơn"
+    },
+    {
+      "name": "Nghệ An"
+    },
+    {
+      "name": "Quảng Ngãi"
+    },
+    {
+      "name": "Sóc Trăng"
+    },
+    {
+      "name": "Sơn La"
+    },
+    {
+      "name": "Tây Ninh"
+    },
+    {
+      "name": "Thái Nguyên"
+    },
+    {
+      "name": "Tiền Giang"
+    }
   ],
-  "user": [
+  "users": [
     {
       "id": 1,
       "isAdmin": false,
-      "username": "tien",
-      "password": "123",
-      "name": "minh tien",
-      "phone": 12345566,
       "email": "minh@minh.com",
-      "sex": "nam"
+      "password": "123",
+      "username": "tien",
+      "phone": 12345566,
+      "gender": "nam"
     },
     {
       "id": 2,
       "isAdmin": true,
-      "username": "tien1234",
-      "password": "123",
-      "name": "minh tien dao",
-      "phone": 12345566,
       "email": "minh@minh.com",
-      "sex": "nam"
+      "password": "123",
+      "username": "tien1234",
+      "phone": 12345566,
+      "gender": "nam"
+    },
+    {
+      "isAdmin": false,
+      "email": "tien_minh_3297@yahoo.com",
+      "password": "1234",
+      "username": "asdf",
+      "phone": "0839883815",
+      "gender": "nữ",
+      "id": 3
     }
   ]
 }

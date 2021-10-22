@@ -1,7 +1,44 @@
-import { Form, Input, Button } from "antd";
+import { Form, Input, Button, message } from "antd";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router";
+import {
+  userAuthorize,
+  userAuthorizeError,
+} from "../../../../redux/actions/user.actions";
+import React from "react";
 import "./styles.scss";
 
-function LogIn() {
+function LogIn(props) {
+  const dispatch = useDispatch();
+  const status = useSelector((state) => state.user.status);
+
+  const history = useHistory();
+
+  React.useEffect(() => {
+    if (status === "login success") {
+      message.success("Đăng nhập thành công");
+    } else if (status === "login fail") {
+      message.error("Email hoặc password sai");
+    }
+  }, [status, history]);
+
+  const userLogin = (value) => {
+    const user = {
+      email: value.email,
+      password: value.password,
+    };
+
+    props.users.map((item) => {
+      if (item.email === user.email && item.password === user.password) {
+        dispatch(userAuthorize(item));
+        window.location.reload();
+        history.push("/");
+      } else {
+        dispatch(userAuthorizeError());
+      }
+    });
+  };
+
   return (
     <div className="log-in">
       <Form
@@ -9,12 +46,13 @@ function LogIn() {
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 16 }}
         initialValues={{ remember: true }}
+        onFinish={userLogin}
         autoComplete="on"
       >
         <Form.Item
-          label="Tên đăng nhập"
-          name="username"
-          rules={[{ required: true, message: "Vui lòng nhập tên đăng nhập!" }]}
+          label="E-mail"
+          name="email"
+          rules={[{ required: true, message: "Vui lòng nhập email!" }]}
         >
           <Input />
         </Form.Item>
