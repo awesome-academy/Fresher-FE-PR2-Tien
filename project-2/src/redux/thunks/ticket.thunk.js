@@ -14,3 +14,16 @@ export function getTicketData() {
     }
   };
 }
+
+export function deleteTicket(id) {
+  return (dispatch) => {
+    axios
+      .delete(ticketURL + "/" + id)
+      .then(() => {
+        dispatch(actions.deleteTicketSuccess());
+      })
+      .catch((error) => {
+        dispatch(actions.deleteTicketError(error));
+      });
+  };
+}

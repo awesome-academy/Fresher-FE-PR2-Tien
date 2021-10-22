@@ -12,3 +12,15 @@ export function getAllTicketsError(error) {
   };
 }
 
+export function deleteTicketError(error) {
+  return {
+    type: "DELETE_TICKET_ERROR",
+    payload: error,
+  };
+}
+
+export function deleteTicketSuccess() {
+  return {
+    type: "DELETE_TICKET_SUCCESS",
+  };
+}

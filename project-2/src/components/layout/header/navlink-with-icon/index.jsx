@@ -78,7 +78,7 @@ function NavLinkWithIcon() {
         >
           <div key={userNavLink.key} icon={userNavLink.icon}>
             <span>Xin Chào </span>
-            <span className="username">{user.username}</span>
+            <span className="username">{user.username} !</span>
             {userNavLink.logOutLabel}
           </div>
         </a>

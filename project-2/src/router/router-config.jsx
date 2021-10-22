@@ -9,6 +9,7 @@ import TicketCart from "../pages/ticket-cart/index";
 import Error from "../pages/error/index";
 import PurchaseSuccess from "../pages/purchase-success/index";
 import ManageUser from "../admin/pages/manage-user/index";
+import ManageRevenue from "../admin/pages/manage-revenue/index";
 
 const ROUTES__CONFIG = {
   USER__ROUTES: {
@@ -66,6 +67,11 @@ const ROUTES__CONFIG = {
       path: "/admin/manage-user",
       exact: true,
       component: ManageUser,
+    },
+    ManageRevenue: {
+      path: "/admin/manage-revenue",
+      exact: true,
+      component: ManageRevenue,
     },
   },
 };
