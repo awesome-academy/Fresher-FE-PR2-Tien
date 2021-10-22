@@ -64,8 +64,9 @@ export function updateUserError(error) {
   };
 }
 
-export function updateUserSuccess() {
+export function updateUserSuccess(user) {
   return {
     type: "UPDATE_USER_SUCCESS",
+    payload: user,
   };
 }

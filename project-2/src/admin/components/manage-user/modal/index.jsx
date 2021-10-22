@@ -51,7 +51,6 @@ function ModalUser(props) {
     if (user) {
       onFill();
     }
-
   }, [user, status, isModalVisible]);
 
   const onFill = () => {

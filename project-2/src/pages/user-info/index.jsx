@@ -1,7 +1,6 @@
-import { Form, Input, Select, Checkbox, Button, message } from "antd";
+import { Form, Input, Select, Button, message } from "antd";
 import { useDispatch, useSelector } from "react-redux";
-import { registerUser, getUserData } from "../../../../redux/thunks/user.thunk";
-import { useHistory } from "react-router";
+import { updateUser, getUserData } from "../../redux/thunks/user.thunk";
 import React from "react";
 import "./styles.scss";
 
@@ -40,14 +39,15 @@ const prefixSelector = (
   </Form.Item>
 );
 
-function Register() {
+function UserInfo() {
   const [form] = Form.useForm();
   const dispatch = useDispatch();
   const status = useSelector((state) => state.user.status);
-  const history = useHistory();
+  const user = useSelector((state) => state.user.user);
 
-  const userRegister = (value) => {
-    const user = {
+  const updateUserByValue = (value) => {
+    const userUpdate = {
+      id: user.id,
       isAdmin: false,
       email: value.email,
       password: value.password,
@@ -56,25 +56,33 @@ function Register() {
       gender: value.gender,
     };
 
-    dispatch(registerUser(user));
-  };
-
-  const onReset = () => {
-    form.resetFields();
+    dispatch(updateUser(userUpdate));
+    dispatch(getUserData());
   };
 
   React.useEffect(() => {
-    if (status === "register success") {
-      message.success("Đăng ký thành viên thành công");
-      onReset();
-      dispatch(getUserData());
-    } else if (status === "register fail") {
-      message.error("Đăng ký thành viên thất bại");
+    if (user) {
+      onFill();
     }
-  }, [status, history]);
+
+    if (status === "update success") {
+      message.success("Thay đổi thông tin thành công");
+    } else if (status === "update fail") {
+      message.error("Thay đổi thông tin thất bại");
+    }
+  }, [status, user]);
+
+  const onFill = () => {
+    form.setFieldsValue({
+      email: user.email,
+      username: user.username,
+      phone: user.phone,
+      gender: user.gender,
+    });
+  };
 
   return (
-    <div className="log-out">
+    <div className="user__info container">
       <Form
         {...formItemLayout}
         form={form}
@@ -82,7 +90,7 @@ function Register() {
         initialValues={{
           prefix: "84",
         }}
-        onFinish={userRegister}
+        onFinish={updateUserByValue}
         scrollToFirstError
       >
         <Form.Item
@@ -175,27 +183,9 @@ function Register() {
           </Select>
         </Form.Item>
 
-        <Form.Item
-          name="agreement"
-          valuePropName="checked"
-          rules={[
-            {
-              validator: (_, value) =>
-                value
-                  ? Promise.resolve()
-                  : Promise.reject(
-                      new Error("Vui lòng đồng ý với điều khoản sử dụng")
-                    ),
-            },
-          ]}
-          {...tailFormItemLayout}
-        >
-          <Checkbox>Tôi đã đọc và đồng ý với các điều khoản</Checkbox>
-        </Form.Item>
-
         <Form.Item {...tailFormItemLayout}>
-          <Button className="login__btn" htmlType="submit">
-            Đăng ký
+          <Button className="user__info__btn" htmlType="submit">
+            Lưu Thay Đổi
           </Button>
         </Form.Item>
       </Form>
@@ -203,4 +193,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default UserInfo;

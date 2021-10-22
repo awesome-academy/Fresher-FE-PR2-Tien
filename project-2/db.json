@@ -6,7 +6,7 @@
       "name": "LẬT MẶT: 48H",
       "director": "Lý Hải",
       "actors": "Võ Thành Tâm, Mạc Văn Khoa, Huỳnh Đông.  ",
-      "type": "Hành Động",
+      "type": "Tình cảm",
       "start": "16/04/2021",
       "time": "115 phút",
       "language": "Tiếng Việt - Phụ đề Tiếng Anh",
@@ -995,6 +995,41 @@
         "quantity": 1
       },
       "id": 4
+    },
+    {
+      "0": {
+        "movie": "BỐ GIÀ",
+        "day": "Oct 26, 2021",
+        "time": "20:00 PM",
+        "theater": "CGV Hùng Vương Plaza",
+        "user": "dao minh tien dev",
+        "price": 49000,
+        "quantity": 1
+      },
+      "1": {
+        "movie": "NGƯỜI NHÂN BẢN",
+        "day": "Oct 26, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Hùng Vương Plaza",
+        "user": "dao minh tien dev",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "phim hay qua",
+      "movie": "BỐ GIÀ",
+      "author": "dao minh tien dev"
+    },
+    {
+      "content": "phim hay qua",
+      "author": "dao minh tien abc",
+      "movie": "LẬT MẶT: 48H",
+      "id": 2
     }
   ]
 }
