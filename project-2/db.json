@@ -478,18 +478,18 @@
       "isAdmin": true,
       "email": "minh@minh.com",
       "password": "123",
-      "username": "tien1234",
+      "username": "tien minh",
       "phone": 12345566,
       "gender": "nam"
     },
     {
+      "id": 3,
       "isAdmin": false,
-      "email": "tien_minh_3297@yahoo.com",
-      "password": "1234",
-      "username": "asdf",
-      "phone": "0839883815",
-      "gender": "nữ",
-      "id": 3
+      "email": "minh@tien.com",
+      "password": "123",
+      "username": "tien minh dao",
+      "phone": "123450888",
+      "gender": "nam"
     }
   ],
   "movieCalendars": [
@@ -561,10 +561,7 @@
             {
               "city": "Đà Nẵng",
               "showTime": [
-                {
-                  "theater": "CGV Vĩnh Trung Plaza",
-                  "time": ["14:30 PM", "20:00 PM"]
-                }
+                { "theater": "CGV Vĩnh Trung Plaza", "time": "20:00 PM" }
               ]
             }
           ]

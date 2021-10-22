@@ -31,8 +31,12 @@ function LogIn(props) {
     props.users.map((item) => {
       if (item.email === user.email && item.password === user.password) {
         dispatch(userAuthorize(item));
-        history.push("/");
-      } else {
+        if (item.isAdmin) {
+          history.push("/admin/manage-user");
+        } else {
+          history.push("/");
+        }
+      } else if (item.email !== user.email && item.password !== user.password) {
         dispatch(userAuthorizeError());
       }
     });

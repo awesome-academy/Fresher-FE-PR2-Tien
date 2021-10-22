@@ -54,16 +54,33 @@ function NavLinkWithIcon() {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user.user);
   const auth = useSelector((state) => state.user.isLoggedIn);
+  const isAdmin = useSelector((state) => state.user.user.isAdmin);
+
+  const navLinkTopShow = navlinkTop.map((item) => {
+    return (
+      <Link to={item.to}>
+        {!isAdmin && (
+          <Menu.Item key={item.key} icon={item.icon}>
+            {item.label}
+          </Menu.Item>
+        )}
+      </Link>
+    );
+  });
 
   const userLinkShow = (user) => {
     if (user.username) {
       return (
-        <a href={userNavLink.to} onClick={() => dispatch(userLogOut())}>
-          <Menu.Item key={userNavLink.key} icon={userNavLink.icon}>
+        <a
+          style={{ color: "black" }}
+          href={userNavLink.to}
+          onClick={() => dispatch(userLogOut())}
+        >
+          <div key={userNavLink.key} icon={userNavLink.icon}>
             <span>Xin Chào </span>
             <span className="username">{user.username}</span>
             {userNavLink.logOutLabel}
-          </Menu.Item>
+          </div>
         </a>
       );
     } else {
@@ -78,7 +95,7 @@ function NavLinkWithIcon() {
   };
 
   const ticketNavLinkShow = (auth) => {
-    if (auth) {
+    if (!isAdmin && auth) {
       return (
         <Link to={ticketNavLink.to}>
           <Menu.Item key={ticketNavLink.key} icon={ticketNavLink.icon}>

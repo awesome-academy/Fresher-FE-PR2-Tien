@@ -12,12 +12,15 @@ export default function userReducers(state = initialState, { type, payload }) {
       return {
         ...state,
         users: payload,
+        status: "",
       };
+
     case "GET_ALL_USERS_ERROR":
       return {
         ...state,
         error: payload,
       };
+
     case "USER_AUTHORIZE":
       const profile = payload;
 
@@ -29,11 +32,13 @@ export default function userReducers(state = initialState, { type, payload }) {
         user: payload,
         status: "login success",
       };
+
     case "USER_AUTHORIZE_ERROR":
       return {
         ...state,
         status: "login fail",
       };
+
     case "USER_LOGOUT":
       sessionStorage.clear();
 
@@ -43,16 +48,44 @@ export default function userReducers(state = initialState, { type, payload }) {
         isLoggedIn: false,
         status: "",
       };
+
     case "REGISTER_USER_ERROR":
       return {
         ...state,
         error: payload,
         status: "register fail",
       };
+
     case "REGISTER_USER_SUCCESS":
       return {
         ...state,
         status: "register success",
+      };
+
+    case "DELETE_USER_ERROR":
+      return {
+        ...state,
+        error: payload,
+        status: "delete fail",
+      };
+
+    case "DELETE_USER_SUCCESS":
+      return {
+        ...state,
+        status: "delete success",
+      };
+
+    case "UPDATE_USER_ERROR":
+      return {
+        ...state,
+        error: payload,
+        status: "update fail",
+      };
+
+    case "UPDATE_USER_SUCCESS":
+      return {
+        ...state,
+        status: "update success",
       };
 
     default:
