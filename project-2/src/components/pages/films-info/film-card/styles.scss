@@ -1,6 +1,8 @@
 @import "../../../../index.scss";
 
 .film-card {
+  margin-bottom: 3rem;
+
   .card {
     border: none;
     width: 13rem;
@@ -13,6 +15,7 @@
 
     .card__img {
       width: 13rem;
+      height: 20rem;
       border: 8px solid $black-color;
     }
 
@@ -24,6 +27,7 @@
       background-color: $background-color;
       padding-left: 0;
       padding-top: 2px;
+      height: 8rem;
 
       .description {
         color: $black-color;

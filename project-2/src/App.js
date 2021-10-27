@@ -9,8 +9,19 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
+import { getMovieData } from "./redux/thunks/movie.thunk";
+import { useDispatch } from "react-redux";
 
 function App() {
+  const dispatch = useDispatch();
+
+  /**
+   * Fetch data
+   */
+  React.useEffect(() => {
+    dispatch(getMovieData());
+  }, [dispatch]);
+
   return (
     <div className="App">
       <Layout>

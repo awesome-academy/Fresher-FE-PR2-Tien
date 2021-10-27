@@ -5,5 +5,10 @@
 
   .film-grid {
     margin-top: 3rem;
+
+    .ant-pagination {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
