@@ -12,7 +12,7 @@ export default function movieReducers(state = initialState, { type, payload }) {
         ...state,
         movies: payload,
       };
-
+    
     case "GET_ALL_MOVIES_ERROR":
       return {
         ...state,
