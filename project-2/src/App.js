@@ -10,6 +10,8 @@ import {
   Redirect,
 } from "react-router-dom";
 import { getMovieData } from "./redux/thunks/movie.thunk";
+import { getTheaterData } from "./redux/thunks/theater.thunk";
+import { getNewsData } from "./redux/thunks/news.thunk";
 import { useDispatch } from "react-redux";
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
    */
   React.useEffect(() => {
     dispatch(getMovieData());
+    dispatch(getTheaterData());
+    dispatch(getNewsData());
   }, [dispatch]);
 
   return (

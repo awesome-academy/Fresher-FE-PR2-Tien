@@ -350,5 +350,63 @@
       "theater": "",
       "status": "incoming"
     }
+  ],
+  "theaters": [
+    {
+      "name": "Hồ Chí Minh",
+      "list": [
+        "CGV Hùng Vương Plaza",
+        "CGV Crescent Mall",
+        "CGV Thảo Điền Pearl",
+        "CGV Vincom Thủ Đức",
+        "CGV Vivo City",
+        "CGV Pearl Plaza",
+        "CGV Liberty Citypoint",
+        "CGV Vincom Đồng Khởi",
+        "CGV Trường Sơn CGV CT Plaza"
+      ]
+    },
+    {
+      "name": "Hà Nội",
+      "list": [
+        "CGV Vincom Center Bà Triệu",
+        "CGV Mipec Tower",
+        "CGV Hồ Gươm Plaza",
+        "CGV Aeon Long Biên",
+        "CGV Vincom Nguyễn Chí Thanh",
+        "CGV Indochina Plaza Hà Nội"
+      ]
+    },
+    {
+      "name": "Đà Nẵng",
+      "list": ["CGV Vĩnh Trung Plaza", "CGV Vincom Đà Nẵng"]
+    },
+    { "name": "Cần Thơ" },
+    { "name": "Đồng Nai" },
+    { "name": "Hải Phòng" },
+    { "name": "Quảng Ninh" },
+    { "name": "Bà Rịa-Vũng Tàu" },
+    { "name": "Bình Định" },
+    { "name": "Bình Dương" },
+    { "name": "Đắk Lắk" },
+    { "name": "Trà Vinh" },
+    { "name": "Yên Bái" },
+    { "name": "Vĩnh Long" },
+    { "name": "Kiên Giang" },
+    { "name": "Hậu Giang" },
+    { "name": "Hà Tĩnh" },
+    { "name": "Phú Yên" },
+    { "name": "Đồng Tháp" },
+    { "name": "Hưng Yên" },
+    { "name": "Khánh Hòa" },
+    { "name": "Kon Tum" },
+    { "name": "Lạng Sơn" },
+    { "name": "Nghệ An" },
+    { "name": "Quảng Ngãi" },
+    { "name": "Sóc Trăng" },
+    { "name": "Sơn La" },
+    { "name": "Tây Ninh" },
+    { "name": "Thái Nguyên" },
+    { "name": "Tiền Giang" }
   ]
 }

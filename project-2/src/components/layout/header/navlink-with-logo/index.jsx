@@ -12,7 +12,7 @@ const navLink = [
   },
   {
     label: "RẠP CGV",
-    href: "#",
+    href: "/theater-info",
   },
   {
     label: "THÀNH VIÊN",
