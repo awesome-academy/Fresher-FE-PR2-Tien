@@ -13,6 +13,11 @@ function TheaterTable(props) {
     listTheaters.map((item) => setListTheater(item.list));
   }
 
+  function setTitleAndDisplay(title) {
+    props.setTheaterHidden(true);
+    props.setTheaterTitle(title);
+  }
+
   return (
     <div className="theater__info__table">
       <h1 className="theater__info__title">CGV CINEMA</h1>
@@ -50,7 +55,7 @@ function TheaterTable(props) {
                 <a
                   className="table__item"
                   href="#."
-                  onClick={() => props.setTheaterHidden()}
+                  onClick={() => setTitleAndDisplay(item)}
                 >
                   {item}
                 </a>,

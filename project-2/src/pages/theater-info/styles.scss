@@ -9,4 +9,15 @@
     width: 65vw;
     height: 45rem;
   }
+
+  .theater__slide {
+    flex-direction: column;
+    text-align: center;
+
+    .theater__title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: $gray-color;
+    }
+  }
 }
