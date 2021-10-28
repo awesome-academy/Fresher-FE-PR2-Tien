@@ -21,7 +21,9 @@ function Slider() {
   return (
     <div
       className="slider container"
-      style={{ background: `url("assets/img/background/bg_c_bricks.png")` }}
+      style={{
+        background: `url("/assets/img/background/bg_c_bricks.png")`,
+      }}
     >
       <Carousel
         className="slide"

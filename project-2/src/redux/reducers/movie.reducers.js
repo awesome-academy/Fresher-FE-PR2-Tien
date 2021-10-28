@@ -2,6 +2,7 @@ const initialState = {
   movies: [],
   incomingMovies: [],
   showingMovies: [],
+  movieById: "",
   error: null,
 };
 
@@ -12,7 +13,7 @@ export default function movieReducers(state = initialState, { type, payload }) {
         ...state,
         movies: payload,
       };
-    
+
     case "GET_ALL_MOVIES_ERROR":
       return {
         ...state,
@@ -43,6 +44,17 @@ export default function movieReducers(state = initialState, { type, payload }) {
         error: payload,
       };
 
+    case "GET_MOVIE_BY_ID":
+      return {
+        ...state,
+        movieById: payload,
+      };
+
+    case "GET_MOVIE_BY_ID_ERROR":
+      return {
+        ...state,
+        movieById: payload,
+      };
     case "SET_MOVIES":
       return {
         ...state,

@@ -3,6 +3,8 @@ import News from "../pages/news/index.jsx";
 import NowShowing from "../pages/films-info/now-showing/index";
 import Incoming from "../pages/films-info/incoming/index";
 import TheaterInfo from "../pages/theater-info/index";
+import FilmDetail from "../pages/films-info/film-detail/index";
+import LoginLogout from "../pages/login-logout/index";
 
 const ROUTES__CONFIG = {
   USER__ROUTES: {
@@ -30,6 +32,16 @@ const ROUTES__CONFIG = {
       path: "/theater-info",
       exact: true,
       component: TheaterInfo,
+    },
+    filmDetail: {
+      path: "/film-detail/:id",
+      exact: true,
+      component: FilmDetail,
+    },
+    LoginLogout: {
+      path: "/login-logout",
+      exact: true,
+      component: LoginLogout,
     },
   },
 };

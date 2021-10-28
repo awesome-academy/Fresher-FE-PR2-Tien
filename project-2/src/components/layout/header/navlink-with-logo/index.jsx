@@ -47,7 +47,7 @@ function NavLinkWithLogo() {
     <div
       className="header__navbar--bottom"
       style={{
-        background: `url("assets/img/background/bg-top.png") `,
+        background: `url("/assets/img/background/bg-top.png") `,
       }}
     >
       <Row className="navbar container">
