@@ -1,5 +1,8 @@
-import { Form, Input, Select, Checkbox, Button } from "antd";
-import { useDispatch } from "react-redux";
+import { Form, Input, Select, Checkbox, Button, message } from "antd";
+import { useDispatch, useSelector } from "react-redux";
+import { registerUser } from "../../../../redux/thunks/user.thunk";
+import { useHistory } from "react-router";
+import React from "react";
 import "./styles.scss";
 
 const { Option } = Select;
@@ -40,19 +43,34 @@ const prefixSelector = (
 function Register() {
   const [form] = Form.useForm();
   const dispatch = useDispatch();
+  const status = useSelector((state) => state.user.status);
+  const history = useHistory();
 
-  const Registers = (value) => {
-    const customer = {
+  const userRegister = (value) => {
+    const user = {
+      isAdmin: false,
       email: value.email,
       password: value.password,
-      fullname: value.fullname,
-      phone: `${value.prefix}${value.phone}`,
-      address: value.address,
-      isAdmin: false,
+      username: value.username,
+      phone: value.phone,
+      gender: value.gender,
     };
 
-    dispatch((customer));
+    dispatch(registerUser(user));
   };
+
+  const onReset = () => {
+    form.resetFields();
+  };
+
+  React.useEffect(() => {
+    if (status === "register success") {
+      message.success("Đăng ký thành viên thành công");
+      onReset();
+    } else if (status === "register fail") {
+      message.error("Đăng ký thành viên thất bại");
+    }
+  }, [status, history]);
 
   return (
     <div className="log-out">
@@ -63,7 +81,7 @@ function Register() {
         initialValues={{
           prefix: "84",
         }}
-        onFinish={Registers}
+        onFinish={userRegister}
         scrollToFirstError
       >
         <Form.Item
@@ -124,11 +142,11 @@ function Register() {
 
         <Form.Item
           name="username"
-          label="Tên đăng nhập"
+          label="Họ và Tên"
           rules={[
             {
               required: true,
-              message: "Vui lòng nhập tên đăng nhập!",
+              message: "Vui lòng nhập họ và tên!",
               whitespace: true,
             },
           ]}

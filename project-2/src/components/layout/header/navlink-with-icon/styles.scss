@@ -13,5 +13,11 @@
       color: $gray-color;
       border-bottom: none;
     }
+
+    .username {
+      color: $red-color;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
   }
 }
