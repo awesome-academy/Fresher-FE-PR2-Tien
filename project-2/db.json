@@ -491,5 +491,430 @@
       "gender": "nữ",
       "id": 3
     }
+  ],
+  "movieCalendars": [
+    {
+      "id": 1,
+      "movie": "LẬT MẶT: 48H",
+      "days": [
+        {
+          "day": "Oct 23, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 24, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Liberty Citypoint",
+                  "time": ["15:30 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Hồ Gươm Plaza",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 26, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                },
+                {
+                  "theater": "CGV Aeon Long Biên",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 27, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "movie": "BỐ GIÀ",
+      "days": [
+        {
+          "day": "Oct 23, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 24, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Liberty Citypoint",
+                  "time": ["15:30 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Hồ Gươm Plaza",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 26, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                },
+                {
+                  "theater": "CGV Aeon Long Biên",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 27, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "movie": "NGƯỜI NHÂN BẢN",
+      "days": [
+        {
+          "day": "Oct 23, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 24, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Liberty Citypoint",
+                  "time": ["15:30 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Hồ Gươm Plaza",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 26, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                },
+                {
+                  "theater": "CGV Aeon Long Biên",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "day": "Oct 27, 2021",
+          "places": [
+            {
+              "city": "Hồ Chí Minh",
+              "showTime": [
+                {
+                  "theater": "CGV Hùng Vương Plaza",
+                  "time": ["15:30 PM", "20:00 PM"]
+                },
+                {
+                  "theater": "CGV Crescent Mall",
+                  "time": ["12:30 PM", "22:00 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Hà Nội",
+              "showTime": [
+                {
+                  "theater": "CGV Vincom Center Bà Triệu",
+                  "time": ["11:30 PM"]
+                }
+              ]
+            },
+            {
+              "city": "Đà Nẵng",
+              "showTime": [
+                {
+                  "theater": "CGV Vĩnh Trung Plaza",
+                  "time": ["14:30 PM", "20:00 PM"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
