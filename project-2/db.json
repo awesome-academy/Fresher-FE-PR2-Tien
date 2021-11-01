@@ -916,5 +916,82 @@
         }
       ]
     }
+  ],
+  "ticketCart": [
+    {
+      "0": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 24, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Liberty Citypoint",
+        "user": "tien1234",
+        "price": 49000,
+        "quantity": 2
+      },
+      "1": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 26, 2021",
+        "time": "11:30 PM",
+        "theater": "CGV Aeon Long Biên",
+        "user": "tien1234",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 1
+    },
+    {
+      "0": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 24, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Liberty Citypoint",
+        "user": "tien1234",
+        "price": 49000,
+        "quantity": 2
+      },
+      "1": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 26, 2021",
+        "time": "11:30 PM",
+        "theater": "CGV Aeon Long Biên",
+        "user": "tien1234",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 2
+    },
+    {
+      "0": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 24, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Liberty Citypoint",
+        "user": "tien1234",
+        "price": 49000,
+        "quantity": 2
+      },
+      "1": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 26, 2021",
+        "time": "11:30 PM",
+        "theater": "CGV Aeon Long Biên",
+        "user": "tien1234",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 3
+    },
+    {
+      "0": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 24, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Liberty Citypoint",
+        "user": "tien1234",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 4
+    }
   ]
 }

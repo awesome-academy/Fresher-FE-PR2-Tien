@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./styles.scss";
 
 function FilmTitle({ filmTitle: { current, redirect, link } }) {
@@ -6,9 +7,9 @@ function FilmTitle({ filmTitle: { current, redirect, link } }) {
       <div className="film__title">
         <h1 className="film__title__current">{current}</h1>
 
-        <a href={link}>
+        <Link to={link}>
           <h2 className="film__title__redirect">{redirect}</h2>
-        </a>
+        </Link>
       </div>
     </div>
   );

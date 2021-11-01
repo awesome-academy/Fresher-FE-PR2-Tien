@@ -1,4 +1,4 @@
-import { Button } from "antd";
+import { Button, message } from "antd";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 import FilmModal from "../film-modal/index";
@@ -7,23 +7,27 @@ import "./styles.scss";
 const ticket = "/assets/icons/bg-cate-booking.png";
 
 function FilmCardHorizontal({
-  movie: { src, name, director, actors, type, time, start, language },
+  movie: { src, name, director, actors, type, time, start, language, status },
 }) {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [movieChosen, setMovieChosen] = useState("");
+  const movieCalendar = useSelector(
+    (state) => state.movieCalendar.movieCalendar
+  );
+  const auth = useSelector((state) => state.user.isLoggedIn);
 
   const showModal = () => {
-    setIsModalVisible(true);
-    filterMovie(name);
+    if (auth === true) {
+      setIsModalVisible(true);
+      filterMovie(name);
+    } else {
+      message.error("Vui lòng đăng nhập");
+    }
   };
 
   const handleCancel = () => {
     setIsModalVisible(false);
   };
-
-  const movieCalendar = useSelector(
-    (state) => state.movieCalendar.movieCalendar
-  );
 
   function filterMovie(name) {
     let movie = movieCalendar.find((movie) => movie.movie === name);
@@ -62,20 +66,23 @@ function FilmCardHorizontal({
           {language}
         </span>
 
-        <Button
-          className="card__btn"
-          shape="round"
-          icon={<img src={ticket} alt="ticket" />}
-          size="large"
-          onClick={showModal}
-        >
-          MUA VÉ
-        </Button>
+        {status === "now-showing" && (
+          <Button
+            className="card__btn"
+            shape="round"
+            icon={<img src={ticket} alt="ticket" />}
+            size="large"
+            onClick={showModal}
+          >
+            MUA VÉ
+          </Button>
+        )}
 
         <FilmModal
           isModalVisible={isModalVisible}
           handleCancel={handleCancel}
           movieChosen={movieChosen}
+          name={name}
         />
       </div>
     </div>

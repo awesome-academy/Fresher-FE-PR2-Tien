@@ -5,6 +5,9 @@ import Incoming from "../pages/films-info/incoming/index";
 import TheaterInfo from "../pages/theater-info/index";
 import FilmDetail from "../pages/films-info/film-detail/index";
 import LoginLogout from "../pages/login-logout/index";
+import TicketCart from "../pages/ticket-cart/index";
+import Error from "../pages/error/index";
+import PurchaseSuccess from "../pages/purchase-success/index";
 
 const ROUTES__CONFIG = {
   USER__ROUTES: {
@@ -42,6 +45,21 @@ const ROUTES__CONFIG = {
       path: "/login-logout",
       exact: true,
       component: LoginLogout,
+    },
+    TicketCart: {
+      path: "/ticket-cart",
+      exact: true,
+      component: TicketCart,
+    },
+    Error: {
+      path: "/error",
+      exact: true,
+      component: Error,
+    },
+    PurchaseSuccess: {
+      path: "/purchase-success",
+      exact: true,
+      component: PurchaseSuccess,
     },
   },
 };

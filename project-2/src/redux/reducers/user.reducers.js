@@ -1,5 +1,6 @@
 const initialState = {
   users: [],
+  user: {},
   isLoggedIn: false,
   error: null,
   status: "",
@@ -25,6 +26,7 @@ export default function userReducers(state = initialState, { type, payload }) {
       return {
         ...state,
         isLoggedIn: true,
+        user: payload,
         status: "login success",
       };
     case "USER_AUTHORIZE_ERROR":
@@ -37,7 +39,9 @@ export default function userReducers(state = initialState, { type, payload }) {
 
       return {
         ...state,
+        user: {},
         isLoggedIn: false,
+        status: "",
       };
     case "REGISTER_USER_ERROR":
       return {
