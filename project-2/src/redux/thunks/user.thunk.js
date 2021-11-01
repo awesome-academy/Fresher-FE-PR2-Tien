@@ -27,3 +27,29 @@ export function registerUser(user) {
       });
   };
 }
+
+export function deleteUser(id) {
+  return (dispatch) => {
+    axios
+      .delete(userURL + "/" + id)
+      .then(() => {
+        dispatch(actions.deleteUserSuccess());
+      })
+      .catch((error) => {
+        dispatch(actions.deleteUserError(error));
+      });
+  };
+}
+
+export function updateUser(user) {
+  return (dispatch) => {
+    axios
+      .put(userURL + "/" + user.id, { ...user })
+      .then(() => {
+        dispatch(actions.updateUserSuccess());
+      })
+      .catch((error) => {
+        dispatch(actions.updateUserError(error));
+      });
+  };
+}

@@ -1,4 +1,5 @@
 import { Row, Col } from "antd";
+import { useSelector } from "react-redux";
 import FooterList from "../../components/layout/footer/footer-list/index";
 import "./footer.scss";
 
@@ -65,42 +66,47 @@ const CJCGV = {
 };
 
 function Footer() {
+  const isAdmin = useSelector((state) => state.user.user.isAdmin);
+
   return (
     <div className="footer">
-      <hr className="footer__divider" />
-      <div className="container">
-        <img className="logoCine" src={logoCine} alt="type of cine" />
-      </div>
+      {!isAdmin && (
+        <div>
+          <hr className="footer__divider" />
+          <div className="container">
+            <img className="logoCine" src={logoCine} alt="type of cine" />
+          </div>
 
-      <hr className="footer__divider" style={{ marginTop: "0px" }} />
+          <hr className="footer__divider" style={{ marginTop: "0px" }} />
 
-      <Row className="container">
-        <Col xs={24} md={6}>
-          <FooterList data={CGVList} />
-        </Col>
-        <Col xs={24} md={6}>
-          <FooterList data={TermList} />
-        </Col>
-        <Col xs={24} md={6}>
-          <FooterList data={ConnectList} />
-        </Col>
-        <Col xs={24} md={6}>
-          <FooterList data={CustomerCareList} />
-        </Col>
-      </Row>
+          <Row className="container">
+            <Col xs={24} md={6}>
+              <FooterList data={CGVList} />
+            </Col>
+            <Col xs={24} md={6}>
+              <FooterList data={TermList} />
+            </Col>
+            <Col xs={24} md={6}>
+              <FooterList data={ConnectList} />
+            </Col>
+            <Col xs={24} md={6}>
+              <FooterList data={CustomerCareList} />
+            </Col>
+          </Row>
 
-      <hr className="footer__divider" />
-      <Row className="container">
-        <Col xs={{ span: 24 }} md={4}>
-          <img className="footer__logoCJ" src={logoCJ} alt="logo" />
-        </Col>
-        <Col xs={24} md={20}>
-          <FooterList data={CJCGV} />
-        </Col>
-      </Row>
+          <hr className="footer__divider" />
+          <Row className="container">
+            <Col xs={{ span: 24 }} md={4}>
+              <img className="footer__logoCJ" src={logoCJ} alt="logo" />
+            </Col>
+            <Col xs={24} md={20}>
+              <FooterList data={CJCGV} />
+            </Col>
+          </Row>
 
-      <br />
-
+          <br />
+        </div>
+      )}
       <div
         className="footer__bottom"
         style={{ background: `url("/assets/img/background/bg-bottom-footer.jpg") ` }}

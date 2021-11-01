@@ -1,5 +1,6 @@
 import { Row, Col, Menu } from "antd";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./styles.scss";
 
 const logoCGV = "/assets/logo/logo-header/cgvlogo.png";
@@ -25,15 +26,20 @@ const navLink = [
   },
 ];
 
-const navLinkShow = navLink.map((item, index) => {
-  return (
-    <li key={index}>
-      <Link className="nav__link" to={item.to}>
-        {item.label}
-      </Link>
-    </li>
-  );
-});
+const adminNavLink = [
+  {
+    label: "QUẢN LÝ USER",
+    to: "/admin/manage-user",
+  },
+  {
+    label: "QUẢN LÝ VÉ PHIM",
+    to: "/admin/manage-ticket",
+  },
+  {
+    label: "QUẢN LÝ PHIM",
+    to: "/admin/manage-film",
+  },
+];
 
 const menuShow = navLink.map((item, index) => {
   return (
@@ -44,6 +50,28 @@ const menuShow = navLink.map((item, index) => {
 });
 
 function NavLinkWithLogo() {
+  const isAdmin = useSelector((state) => state.user.user.isAdmin);
+
+  const navLinkShow = navLink.map((item, index) => {
+    return (
+      <li key={index}>
+        <Link className="nav__link" to={item.to}>
+          {item.label}
+        </Link>
+      </li>
+    );
+  });
+
+  const adminNavLinkShow = adminNavLink.map((item, index) => {
+    return (
+      <li key={index}>
+        <Link className="nav__link" to={item.to}>
+          {item.label}
+        </Link>
+      </li>
+    );
+  });
+
   return (
     <div
       className="header__navbar--bottom"
@@ -58,12 +86,15 @@ function NavLinkWithLogo() {
           </Link>
         </Col>
         <Col xs={0} lg={12}>
-          <ul className="nav__item">{navLinkShow}</ul>
+          {!isAdmin && <ul className="nav__item">{navLinkShow}</ul>}
+          {isAdmin && <ul className="nav__item">{adminNavLinkShow}</ul>}
         </Col>
-        <Col xs={0} lg={8} className="logo__group">
-          <img src={logoCine} alt="gif" />
-          <img src={logoTicket} alt="mua vé ngay" />
-        </Col>
+        {!isAdmin && (
+          <Col xs={0} lg={8} className="logo__group">
+            <img src={logoCine} alt="gif" />
+            <img src={logoTicket} alt="mua vé ngay" />
+          </Col>
+        )}
       </Row>
 
       <br />

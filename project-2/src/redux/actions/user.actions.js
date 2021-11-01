@@ -43,3 +43,29 @@ export function registerUserSuccess() {
     type: "REGISTER_USER_SUCCESS",
   };
 }
+
+export function deleteUserError(error) {
+  return {
+    type: "DELETE_USER_ERROR",
+    payload: error,
+  };
+}
+
+export function deleteUserSuccess() {
+  return {
+    type: "DELETE_USER_SUCCESS",
+  };
+}
+
+export function updateUserError(error) {
+  return {
+    type: "UPDATE_USER_ERROR",
+    payload: error,
+  };
+}
+
+export function updateUserSuccess() {
+  return {
+    type: "UPDATE_USER_SUCCESS",
+  };
+}

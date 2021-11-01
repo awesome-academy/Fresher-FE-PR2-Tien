@@ -8,6 +8,7 @@ import LoginLogout from "../pages/login-logout/index";
 import TicketCart from "../pages/ticket-cart/index";
 import Error from "../pages/error/index";
 import PurchaseSuccess from "../pages/purchase-success/index";
+import ManageUser from "../admin/pages/manage-user/index";
 
 const ROUTES__CONFIG = {
   USER__ROUTES: {
@@ -60,6 +61,11 @@ const ROUTES__CONFIG = {
       path: "/purchase-success",
       exact: true,
       component: PurchaseSuccess,
+    },
+    ManageUser: {
+      path: "/admin/manage-user",
+      exact: true,
+      component: ManageUser,
     },
   },
 };

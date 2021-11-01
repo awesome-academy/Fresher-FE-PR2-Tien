@@ -15,6 +15,7 @@ export default function wishListReducers(
       return {
         ...state,
         tickets: getWishList,
+        status: "",
       };
 
     case "ADD_TICKET_TO_WISHLIST":
