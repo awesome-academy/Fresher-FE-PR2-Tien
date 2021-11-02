@@ -39,7 +39,7 @@ function ManageUser() {
       dataIndex: "index",
       key: "index",
 
-      render: (text, record, index) => index + 1,
+      render: (text, record) => users.indexOf(record) + 1,
     },
     {
       title: "Tên",
@@ -101,10 +101,17 @@ function ManageUser() {
 
   return (
     <div className="manage-user container">
+      <h1 className="title">Quản Lý User</h1>
+
       <Table
         columns={columns}
         dataSource={users}
         bordered
+        pagination={{
+          defaultPageSize: 4,
+          showSizeChanger: true,
+          pageSizeOptions: ["4"],
+        }}
         className="manage-user__table"
       />
     </div>

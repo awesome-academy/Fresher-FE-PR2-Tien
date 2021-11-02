@@ -1,9 +1,9 @@
 @import "../../../index.scss";
 
-.manage-user {
+.manage-revenue {
   padding-top: 3rem;
   background-color: $background-color;
-  height: 57vh;
+  height: 80vh;
 
   .title {
     text-align: center;
@@ -12,7 +12,7 @@
     font-size: 3rem;
   }
 
-  .manage-user__table {
+  .manage-revenue__table {
     .ant-table-thead {
       .ant-table-cell {
         background-color: $red-color;
@@ -37,10 +37,6 @@
 
     .delete__icon {
       color: $red-color;
-    }
-
-    .edit__icon {
-      color: $blue-color;
     }
   }
 }

@@ -32,8 +32,8 @@ const adminNavLink = [
     to: "/admin/manage-user",
   },
   {
-    label: "QUẢN LÝ VÉ PHIM",
-    to: "/admin/manage-ticket",
+    label: "QUẢN LÝ DOANH THU",
+    to: "/admin/manage-revenue",
   },
   {
     label: "QUẢN LÝ PHIM",

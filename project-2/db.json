@@ -468,8 +468,8 @@
       "id": 1,
       "isAdmin": false,
       "email": "minh@minh.com",
-      "password": "123",
-      "username": "tien",
+      "password": "12345",
+      "username": "tien dao minh",
       "phone": 12345566,
       "gender": "nam"
     },
@@ -488,6 +488,15 @@
       "email": "minh@tien.com",
       "password": "123",
       "username": "tien minh dao",
+      "phone": "123450888",
+      "gender": "nam"
+    },
+    {
+      "id": 4,
+      "isAdmin": false,
+      "email": "minh@tien123.com",
+      "password": "abcds",
+      "username": "dao minh tien",
       "phone": "123450888",
       "gender": "nam"
     }
