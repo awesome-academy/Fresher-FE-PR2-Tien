@@ -47,18 +47,11 @@ function ModalUser(props) {
   const dispatch = useDispatch();
   const status = useSelector((state) => state.user.status);
 
-  console.log(user);
-
   useEffect(() => {
     if (user) {
       onFill();
     }
 
-    // if (status === "update success") {
-    //   message.success("Thay đổi thông tin thành công");
-    // } else if (status === "update fail") {
-    //   message.error("Thay đổi thông tin thất bại");
-    // }
   }, [user, status, isModalVisible]);
 
   const onFill = () => {
