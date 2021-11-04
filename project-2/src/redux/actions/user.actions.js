@@ -70,3 +70,10 @@ export function updateUserSuccess(user) {
     payload: user,
   };
 }
+
+export function setUser(user) {
+  return {
+    type: "SET_USER",
+    payload: user,
+  };
+}

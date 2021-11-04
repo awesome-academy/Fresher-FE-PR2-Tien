@@ -1,17 +1,20 @@
 import { Card } from "antd";
+import { Link } from "react-router-dom";
 import { CalendarOutlined } from "@ant-design/icons";
 import "./styles.scss";
 
 const { Meta } = Card;
 
-function NewsCard({ new: { src, day } }) {
+function NewsCard({ new: { src, day, id } }) {
   return (
     <div className="news-card">
       <Card
         className="card"
         cover={
           <div>
-            <img className="card__img" alt="ưu đãi" src={src} />
+            <Link to={"/news-detail/" + id}>
+              <img className="card__img" alt="ưu đãi" src={src} />
+            </Link>
           </div>
         }
       >
