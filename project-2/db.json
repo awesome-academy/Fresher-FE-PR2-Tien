@@ -1031,5 +1031,63 @@
       "movie": "LẬT MẶT: 48H",
       "id": 2
     }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "src": "/assets/img/news/_CGV_L_u_ng_240_x_201.jpg",
+      "src-detail": "/assets/img/news-detail/_CGV_L_u_ng_350_x_495.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. Liên hệ CGV để được tư vấn cụ thể:\n- Miền Nam: Mr. Đạt - 0981.817.654 - dat.truong@cj.net\n- Miền Trung: Mr. Huy - 0974.464.212 - huy.vu@cj.net\n- Miền Bắc: Ms. Lan Anh - 0985.300.835 - anh.nguyen@cj.net",
+      "day": "23/10/2021"
+    },
+    {
+      "id": 2,
+      "src": "/assets/img/news/3thang-240x201.jpg",
+      "src-detail": "/assets/img/news-detail/nguoicu-350x495.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. Liên hệ CGV để được tư vấn cụ thể:\n- Miền Nam: Mr. Đạt - 0981.817.654 - dat.truong@cj.net\n- Miền Trung: Mr. Huy - 0974.464.212 - huy.vu@cj.net\n- Miền Bắc: Ms. Lan Anh - 0985.300.835 - anh.nguyen@cj.net",
+      "day": "09/10/2021"
+    },
+    {
+      "id": 3,
+      "src": "/assets/img/news/240x201_1.jpg",
+      "src-detail": "/assets/img/news-detail/350x495_1.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. Liên hệ CGV để được tư vấn cụ thể:\n- Miền Nam: Mr. Đạt - 0981.817.654 - dat.truong@cj.net\n- Miền Trung: Mr. Huy - 0974.464.212 - huy.vu@cj.net\n- Miền Bắc: Ms. Lan Anh - 0985.300.835 - anh.nguyen@cj.net",
+      "day": "01/10/2021"
+    },
+    {
+      "id": 4,
+      "src": "/assets/img/news/240x201_4.jpg",
+      "src-detail": "/assets/img/news-detail/350x495_4.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. Liên hệ CGV để được tư vấn cụ thể:\n- Miền Nam: Mr. Đạt - 0981.817.654 - dat.truong@cj.net\n- Miền Trung: Mr. Huy - 0974.464.212 - huy.vu@cj.net\n- Miền Bắc: Ms. Lan Anh - 0985.300.835 - anh.nguyen@cj.net",
+      "day": "30/09/2021"
+    },
+    {
+      "id": 5,
+      "src": "/assets/img/news/240x201_5.jpg",
+      "src-detail": "/assets/img/news-detail/350x495_5.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. Liên hệ CGV để được tư vấn cụ thể:\n- Miền Nam: Mr. Đạt - 0981.817.654 - dat.truong@cj.net\n- Miền Trung: Mr. Huy - 0974.464.212 - huy.vu@cj.net\n- Miền Bắc: Ms. Lan Anh - 0985.300.835 - anh.nguyen@cj.net",
+      "day": "11/09/2021"
+    },
+    {
+      "id": 6,
+      "src": "/assets/img/news/CGV_LIVE-RS_240x201_copy.jpg",
+      "src-detail": "/assets/img/news-detail/CGV_LIVE-RS_350x495_copy.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. Liên hệ CGV để được tư vấn cụ thể:\n- Miền Nam: Mr. Đạt - 0981.817.654 - dat.truong@cj.net\n- Miền Trung: Mr. Huy - 0974.464.212 - huy.vu@cj.net\n- Miền Bắc: Ms. Lan Anh - 0985.300.835 - anh.nguyen@cj.net",
+      "day": "15/10/2021"
+    },
+    {
+      "id": 7,
+      "src": "/assets/img/news/240x201.jpg",
+      "src-detail": "/assets/img/news-detail/350x495.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. Liên hệ CGV để được tư vấn cụ thể:\n- Miền Nam: Mr. Đạt - 0981.817.654 - dat.truong@cj.net\n- Miền Trung: Mr. Huy - 0974.464.212 - huy.vu@cj.net\n- Miền Bắc: Ms. Lan Anh - 0985.300.835 - anh.nguyen@cj.net",
+      "day": "16/09/2021"
+    },
+    {
+      "id": 8,
+      "src": "/assets/img/news/pannadau-240x201.jpg",
+      "src-detail": "/assets/img/news-detail/pannadau-350x495.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. Liên hệ CGV để được tư vấn cụ thể:\n- Miền Nam: Mr. Đạt - 0981.817.654 - dat.truong@cj.net\n- Miền Trung: Mr. Huy - 0974.464.212 - huy.vu@cj.net\n- Miền Bắc: Ms. Lan Anh - 0985.300.835 - anh.nguyen@cj.net",
+      "day": "04/09/2021"
+    }
   ]
 }
