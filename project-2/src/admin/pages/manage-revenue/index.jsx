@@ -129,9 +129,9 @@ function ManageRevenue() {
         dataSource={tickets}
         bordered
         pagination={{
-          defaultPageSize: 7,
+          defaultPageSize: 6,
           showSizeChanger: true,
-          pageSizeOptions: ["7"],
+          pageSizeOptions: ["6"],
         }}
         className="manage-revenue__table"
         summary={() => {

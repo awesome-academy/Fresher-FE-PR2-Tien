@@ -11,3 +11,17 @@ export function getAllNewsError(error) {
     payload: error,
   };
 }
+
+export function getNewById(news) {
+  return {
+    type: "GET_NEW_BY_ID",
+    payload: news,
+  };
+}
+
+export function getNewByIdError(error) {
+  return {
+    type: "GET_NEW_BY_ID_ERROR",
+    payload: error,
+  };
+}

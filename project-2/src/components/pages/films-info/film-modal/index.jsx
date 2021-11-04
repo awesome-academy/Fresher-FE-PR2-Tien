@@ -25,7 +25,9 @@ function FilmModal(props) {
   const status = useSelector((state) => state.wishList.status);
 
   React.useEffect(() => {
-    setMovieName();
+    if (movie) {
+      setMovieName();
+    }
   }, [props]);
 
   function setMovieName() {

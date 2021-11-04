@@ -4,6 +4,7 @@ import NowShowing from "../pages/films-info/now-showing/index";
 import Incoming from "../pages/films-info/incoming/index";
 import TheaterInfo from "../pages/theater-info/index";
 import FilmDetail from "../pages/films-info/film-detail/index";
+import NewsDetail from "../pages/news/news-detail/index";
 import LoginLogout from "../pages/login-logout/index";
 import TicketCart from "../pages/ticket-cart/index";
 import Error from "../pages/error/index";
@@ -84,6 +85,11 @@ const ROUTES__CONFIG = {
       path: "/user-info",
       exact: true,
       component: UserInfo,
+    },
+    NewsDetail: {
+      path: "/news-detail/:id",
+      exact: true,
+      component: NewsDetail,
     },
   },
 };

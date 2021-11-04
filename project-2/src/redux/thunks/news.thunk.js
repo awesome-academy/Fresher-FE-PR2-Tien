@@ -14,3 +14,14 @@ export function getNewsData() {
       });
   };
 }
+
+export function getNewDataById(id) {
+  return async (dispatch) => {
+    try {
+      const response = await axios.get(newsURL + "/" + id);
+      await dispatch(actions.getNewById(response.data));
+    } catch (error) {
+      dispatch(actions.getNewByIdError(error));
+    }
+  };
+}

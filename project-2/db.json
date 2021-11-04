@@ -21,13 +21,8 @@
       "actors": "Trấn Thành, Tuấn Trần, Ngân Chi, NSND Ngọc Giàu, Lê Giang, Lan Phương, Hoàng Mèo, La Thành, Quốc Khánh, Lê Trang, A Quay, Bảo Phúc,…",
       "type": "Gia đình, Hài",
       "start": "12/03/2021",
-      "time": "128 phút",
-      "language": "Tiếng Việt - Phụ đề Tiếng Anh",
-      "intro": "Phim sẽ xoay quanh lối sống thường nhật của một xóm lao động nghèo, ở đó có bộ tứ anh em Giàu - Sang - Phú - Quý với Ba Sang sẽ là nhân vật chính, hay lo chuyện bao đồng nhưng vô cùng thương con cái. Câu chuyện phim tập trung về hai cha con Ba Sang (Trấn Thành) và Quắn (Tuấn Trần). Dù yêu thương nhau nhưng khoảng cách thế hệ đã đem đến những bất đồng lớn giữa hai cha con. Liệu cả hai có thể cho nhau cơ hội thấu hiểu đối phương, thu hẹp khoảng cách và tạo nên hạnh phúc từ sự khác biệt?",
-      "theater": "",
-      "status": "now-showing"
-    },
-    {
+      "time": "128 phút"
+    },{
       "id": "3",
       "name": "NGƯỜI NHÂN BẢN",
       "src": "/assets/img/movies-showing/main_poster_seobok_15_1.jpg",
@@ -492,9 +487,18 @@
       "id": 4,
       "isAdmin": false,
       "email": "minh@tien123.com",
-      "password": "abcds",
-      "username": "dao minh tien",
+      "password": "123",
+      "username": "dao minh tien dev ",
       "phone": "123450888",
+      "gender": "nam"
+    },
+    {
+      "id": 5,
+      "isAdmin": false,
+      "email": "daominhtien@gmail.com",
+      "password": "123",
+      "username": "dao minh tien dev 123",
+      "phone": "1243546800",
       "gender": "nam"
     }
   ],
@@ -1016,6 +1020,81 @@
         "quantity": 1
       },
       "id": 5
+    },
+    {
+      "0": {
+        "movie": "NGƯỜI NHÂN BẢN",
+        "day": "Oct 27, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Hùng Vương Plaza",
+        "user": "dao minh tien front-end ",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 6
+    },
+    {
+      "0": {
+        "movie": "NGƯỜI NHÂN BẢN",
+        "day": "Oct 27, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Hùng Vương Plaza",
+        "user": "dao minh tien dev front-end",
+        "price": 49000,
+        "quantity": 1
+      },
+      "1": {
+        "movie": "NGƯỜI NHÂN BẢN",
+        "day": "Oct 26, 2021",
+        "time": "11:30 PM",
+        "theater": "CGV Aeon Long Biên",
+        "user": "dao minh tien dev front-end",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 7
+    },
+    {
+      "0": {
+        "movie": "BỐ GIÀ",
+        "day": "Oct 26, 2021",
+        "time": "20:00 PM",
+        "theater": "CGV Hùng Vương Plaza",
+        "user": "dao minh tien",
+        "price": 49000,
+        "quantity": 1
+      },
+      "1": {
+        "movie": "BỐ GIÀ",
+        "day": "Oct 27, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Hùng Vương Plaza",
+        "user": "dao minh tien",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 8
+    },
+    {
+      "0": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 26, 2021",
+        "time": "15:30 PM",
+        "theater": "CGV Hùng Vương Plaza",
+        "user": "dao minh tien dev ",
+        "price": 49000,
+        "quantity": 1
+      },
+      "1": {
+        "movie": "LẬT MẶT: 48H",
+        "day": "Oct 27, 2021",
+        "time": "11:30 PM",
+        "theater": "CGV Vincom Center Bà Triệu",
+        "user": "dao minh tien dev ",
+        "price": 49000,
+        "quantity": 1
+      },
+      "id": 9
     }
   ],
   "comments": [
@@ -1030,6 +1109,88 @@
       "author": "dao minh tien abc",
       "movie": "LẬT MẶT: 48H",
       "id": 2
+    },
+    {
+      "content": "phim hay",
+      "author": "dao minh tien front-end ",
+      "movie": "NGƯỜI NHÂN BẢN",
+      "id": 3
+    },
+    {
+      "content": "phim hay",
+      "author": "dao minh tien dev front-end",
+      "movie": "BỐ GIÀ",
+      "id": 4
+    },
+    {
+      "content": "phim hay",
+      "author": "dao minh tien",
+      "movie": "THÁM TỬ LỪNG DANH CONAN: VIÊN ĐẠN ĐỎ",
+      "id": 5
+    },
+    {
+      "content": "phim hay ",
+      "author": "dao minh tien dev ",
+      "movie": "LẬT MẶT: 48H",
+      "id": 6
+    }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "src": "/assets/img/news/_CGV_L_u_ng_240_x_201.jpg",
+      "srcDetail": "/assets/img/news-detail/_CGV_L_u_ng_350_x_495.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. ",
+      "day": "23/10/2021"
+    },
+    {
+      "id": 2,
+      "src": "/assets/img/news/3thang-240x201.jpg",
+      "srcDetail": "/assets/img/news-detail/nguoicu-350x495.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. ",
+      "day": "09/10/2021"
+    },
+    {
+      "id": 3,
+      "src": "/assets/img/news/240x201_1.jpg",
+      "srcDetail": "/assets/img/news-detail/350x495_1.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. ",
+      "day": "01/10/2021"
+    },
+    {
+      "id": 4,
+      "src": "/assets/img/news/240x201_4.jpg",
+      "srcDetail": "/assets/img/news-detail/350x495_4.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. ",
+      "day": "30/09/2021"
+    },
+    {
+      "id": 5,
+      "src": "/assets/img/news/240x201_5.jpg",
+      "srcDetail": "/assets/img/news-detail/350x495_5.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. ",
+      "day": "11/09/2021"
+    },
+    {
+      "id": 6,
+      "src": "/assets/img/news/CGV_LIVE-RS_240x201_copy.jpg",
+      "srcDetail": "/assets/img/news-detail/CGV_LIVE-RS_350x495_copy.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. ",
+      "day": "15/10/2021"
+    },
+    {
+      "id": 7,
+      "src": "/assets/img/news/240x201.jpg",
+      "srcDetail": "/assets/img/news-detail/350x495.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. ",
+      "day": "16/09/2021"
+    },
+    {
+      "id": 8,
+      "src": "/assets/img/news/pannadau-240x201.jpg",
+      "srcDetail": "/assets/img/news-detail/pannadau-350x495.jpg",
+      "content": "Là công ty tiên phong cung cấp dịch vụ điện ảnh TỐT NHẤT cho khách hàng theo cách KHÁC BIỆT và với mong muốn đa dạng hóa trải nghiệm cho khách hàng, CGV sẽ mang tới dịch vụ hoàn toàn mới và chuyên nghiệp: Chiếu Phim Lưu Động.Từ nay, CGV sẽ mang rạp chiếu phim đến tận nơi để khán giả có thể thưởng thức bộ phim hấp dẫn ngay tại văn phòng, công ty, xí nghiệp, hội trường đại học, sân trường các trường học trên toàn quốc. ",
+      "day": "04/09/2021"
     }
   ]
 }

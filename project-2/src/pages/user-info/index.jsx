@@ -1,6 +1,7 @@
 import { Form, Input, Select, Button, message } from "antd";
 import { useDispatch, useSelector } from "react-redux";
-import { updateUser, getUserData } from "../../redux/thunks/user.thunk";
+import { updateUser } from "../../redux/thunks/user.thunk";
+import { setUser } from "../../redux/actions/user.actions";
 import React from "react";
 import "./styles.scss";
 
@@ -57,7 +58,7 @@ function UserInfo() {
     };
 
     dispatch(updateUser(userUpdate));
-    dispatch(getUserData());
+    dispatch(setUser(userUpdate));
   };
 
   React.useEffect(() => {
