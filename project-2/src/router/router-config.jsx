@@ -8,6 +8,7 @@ import LoginLogout from "../pages/login-logout/index";
 import TicketCart from "../pages/ticket-cart/index";
 import Error from "../pages/error/index";
 import PurchaseSuccess from "../pages/purchase-success/index";
+import UserInfo from "../pages/user-info/index";
 import ManageUser from "../admin/pages/manage-user/index";
 import ManageRevenue from "../admin/pages/manage-revenue/index";
 import ManageFilm from "../admin/pages/manage-film/index";
@@ -78,6 +79,11 @@ const ROUTES__CONFIG = {
       path: "/admin/manage-film",
       exact: true,
       component: ManageFilm,
+    },
+    UserInfo: {
+      path: "/user-info",
+      exact: true,
+      component: UserInfo,
     },
   },
 };

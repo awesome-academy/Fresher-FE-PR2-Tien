@@ -6,6 +6,7 @@ import userReducers from "./user.reducers";
 import movieCalendarReducers from "./movieCalendar.reducers";
 import ticketReducers from "./ticket.reducers";
 import wishListReducers from "./wishList.reducers";
+import commentReducers from "./comment.reducers";
 
 const rootReducer = combineReducers({
   movie: movieReducers,
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   movieCalendar: movieCalendarReducers,
   ticket: ticketReducers,
   wishList: wishListReducers,
+  comment: commentReducers,
 });
 
 export default rootReducer;

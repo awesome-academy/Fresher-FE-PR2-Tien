@@ -109,7 +109,9 @@ function Footer() {
       )}
       <div
         className="footer__bottom"
-        style={{ background: `url("/assets/img/background/bg-bottom-footer.jpg") ` }}
+        style={{
+          background: `url("/assets/img/background/bg-bottom-footer.jpg") `,
+        }}
       ></div>
     </div>
   );

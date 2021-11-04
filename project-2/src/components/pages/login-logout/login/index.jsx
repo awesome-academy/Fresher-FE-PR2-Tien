@@ -1,5 +1,6 @@
 import { Form, Input, Button, message } from "antd";
 import { useDispatch, useSelector } from "react-redux";
+import { useState } from "react";
 import { useHistory } from "react-router";
 import {
   userAuthorize,
@@ -28,18 +29,20 @@ function LogIn(props) {
       password: value.password,
     };
 
-    props.users.map((item) => {
-      if (item.email === user.email && item.password === user.password) {
-        dispatch(userAuthorize(item));
-        if (item.isAdmin) {
-          history.push("/admin/manage-user");
-        } else {
-          history.push("/");
-        }
-      } else if (item.email !== user.email && item.password !== user.password) {
-        dispatch(userAuthorizeError());
+    let userCorrect = props.users.find(
+      (item) => item.email === user.email && item.password === user.password
+    );
+
+    if (userCorrect) {
+      dispatch(userAuthorize(userCorrect));
+      if (userCorrect.isAdmin) {
+        history.push("/admin/manage-user");
+      } else {
+        history.push("/");
       }
-    });
+    } else {
+      dispatch(userAuthorizeError());
+    }
   };
 
   return (

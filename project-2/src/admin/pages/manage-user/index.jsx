@@ -92,7 +92,7 @@ function ManageUser() {
 
           <DeleteFilled
             className="delete__icon"
-            onClick={() => dispatch(deleteUser(row.id))}
+            onClick={() => dispatch(deleteUser(record.id))}
           />
         </Space>
       ),

@@ -18,7 +18,7 @@ const navLink = [
   },
   {
     label: "THÀNH VIÊN",
-    to: "#",
+    to: "/user-info",
   },
   {
     label: "CULTURE PLEX",

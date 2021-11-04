@@ -86,6 +86,7 @@ export default function userReducers(state = initialState, { type, payload }) {
       return {
         ...state,
         status: "update success",
+        user: payload,
       };
 
     default:

@@ -45,7 +45,6 @@ function ManageFilm() {
       title: "Tên Phim",
       dataIndex: "name",
       key: "name",
-      width: 150,
     },
     {
       title: "Đạo Diễn",
@@ -110,9 +109,9 @@ function ManageFilm() {
         dataSource={movies}
         bordered
         pagination={{
-          defaultPageSize: 6,
+          defaultPageSize: 7,
           showSizeChanger: true,
-          pageSizeOptions: ["6"],
+          pageSizeOptions: ["7"],
         }}
         className="manage-film__table"
       />

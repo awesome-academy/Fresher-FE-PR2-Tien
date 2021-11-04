@@ -46,7 +46,7 @@ export function updateUser(user) {
     axios
       .put(userURL + "/" + user.id, { ...user })
       .then(() => {
-        dispatch(actions.updateUserSuccess());
+        dispatch(actions.updateUserSuccess(user));
       })
       .catch((error) => {
         dispatch(actions.updateUserError(error));
